@@ -1,0 +1,62 @@
+
+import java.util.Scanner;
+
+public class PendaftaranKuliah {
+    public static void main(String[] args) {
+        System.out.println("Pendaftaran Perguruan Tinggi");
+        System.out.println("-----------------------------");
+        Scanner input = new Scanner(System.in);
+        String golongan;
+        String jalur;
+        System.out.print("Jalur masuk yang anda pilih(SBMPTN/SNMPTN/Mandiri): ");
+        jalur = input.nextLine();
+        System.out.print("Golongan pendapatan Anda (A/B/C): ");
+        golongan = input.nextLine();
+        
+        if(jalur.equals("SBMPTN")){
+            if(golongan.equals("A")){
+                System.out.println("DSP:Rp 5.000.000");
+                System.out.println("SPP:Rp 500.000");
+            }
+            if(golongan.equals("B")){
+                System.out.println("DSP:Rp 15.000.000");
+                System.out.println("SPP:Rp 1.000.000");
+        }
+            if(golongan.equals("C")){
+                System.out.println("DSP:Rp 30.000.000");
+                System.out.println("SPP:Rp 2.000.000");
+            }
+        }
+        if(jalur.equals("SNMPTN")){
+            if(golongan.equals("A")){
+                System.out.println("DSP:Rp 7.000.000");
+                System.out.println("SPP:Rp 500.000");
+            }
+            if(golongan.equals("B")){
+                System.out.println("DSP:Rp 17.000.000");
+                System.out.println("SPP:Rp 1.000.000");
+            }
+            if(golongan.equals("C")){
+                System.out.println("DSP:Rp 35.000.000");
+                System.out.println("SPP:Rp 2.000.000");
+            }
+        }
+        if(jalur.equals("Mandiri")){
+             if(golongan.equals("A")){
+                System.out.println("DSP:Rp 10.000.000");
+                System.out.println("SPP:Rp 1.000.000"); 
+             }
+             if(golongan.equals("B")){
+                System.out.println("DSP:Rp 25.000.000"); 
+                System.out.println("SPP:Rp 2.000.000"); 
+             }
+             if(golongan.equals("C")){
+                System.out.println("DSP:Rp 50.000.000"); 
+                System.out.println("SPP:Rp 3.000.000");          
+         
+           }
+              System.out.println("");
+              System.out.println("Terima Kasih");
+        }      
+    }
+}
